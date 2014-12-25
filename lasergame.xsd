@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/lasergame"
+	xmlns:tns="http://www.example.org/lasergame" elementFormDefault="qualified">
+
+	<element name="Partie">
+		<complexType>
+			<sequence>
+				<element name="numeroPartie" type="int"></element>
+				<element name="libellePartie" type="string"></element>
+				<element name="Joueurs" type="tns:Joueur" maxOccurs="unbounded"></element>
+				<element name="Scores" type="tns:Score"></element>
+			</sequence>
+		</complexType>
+	</element>
+
+	<complexType name="Joueur">
+		<sequence>
+			<element name="numeroJoueur" type="int"></element>
+			<element name="pseudo" type="string"></element>
+			<element name="couleur" type="string"></element>
+			<element name="score" type="tns:Score"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="Score">
+		<sequence>
+			<element name="numeroScore" type="int"></element>
+			<element name="nbreMorts" type="int"></element>
+			<element name="nbreTues" type="int"></element>
+			<element name="handicap" type="double"></element>
+		</sequence>
+	</complexType>
+</schema>
