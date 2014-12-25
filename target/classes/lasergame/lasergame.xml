@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Partie xmlns:tns="http://www.example.org/lasergame"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/lasergame lasergame.xsd ">
+
+	<tns:numeroPartie>0</tns:numeroPartie>
+	<tns:libellePartie>Poutrage professeurs affiliés</tns:libellePartie>
+
+	<tns:Joueurs>
+		<tns:numeroJoueur>0</tns:numeroJoueur>
+		<tns:pseudo>Pouet-Coding</tns:pseudo>
+		<tns:couleur>ROUGE</tns:couleur>
+		<tns:score>
+			<tns:numeroScore>10000</tns:numeroScore>
+			<tns:nbreMorts>5</tns:nbreMorts>
+			<tns:nbreTues>201</tns:nbreTues>
+			<tns:handicap>0.0</tns:handicap>
+		</tns:score>
+	</tns:Joueurs>
+
+	<tns:Joueurs>
+		<tns:numeroJoueur>1</tns:numeroJoueur>
+		<tns:pseudo>Professeur1</tns:pseudo>
+		<tns:couleur>BLEU</tns:couleur>
+		<tns:score>
+			<tns:numeroScore>-1760</tns:numeroScore>
+			<tns:nbreMorts>201</tns:nbreMorts>
+			<tns:nbreTues>5</tns:nbreTues>
+			<tns:handicap>0.0</tns:handicap>
+		</tns:score>
+	</tns:Joueurs>
+
+	<tns:Scores>
+		<tns:numeroScore>8240</tns:numeroScore>
+		<tns:nbreMorts>206</tns:nbreMorts>
+		<tns:nbreTues>206</tns:nbreTues>
+		<tns:handicap>0.0</tns:handicap>
+	</tns:Scores>
+
+</tns:Partie>

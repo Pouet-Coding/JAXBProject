@@ -32,7 +32,7 @@ public class Main {
 			// Unmarshalling
 			Unmarshaller um = jc.createUnmarshaller();
 			
-			Partie partie = (Partie) um.unmarshal(new File("lasergame.xml"));
+			Partie partie = (Partie) um.unmarshal(new File("ressources/lasergame/lasergame.xml"));
 			System.out.println("==== Unmarshalling ====\n" + partie);
 			
 			// Marshalling
