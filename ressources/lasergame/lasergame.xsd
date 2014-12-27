@@ -8,8 +8,8 @@
 			<sequence>
 				<element name="numeroPartie" type="int"></element>
 				<element name="libellePartie" type="string"></element>
-				<element name="Joueurs" type="tns:Joueur" maxOccurs="unbounded"></element>
-				<element name="Scores" type="tns:Score"></element>
+				<element name="Joueurs" type="tns:Joueur" minOccurs="2" maxOccurs="2"></element>
+				<element name="Scores" type="tns:Score" minOccurs="0" maxOccurs="1"></element>
 			</sequence>
 		</complexType>
 	</element>
@@ -19,7 +19,7 @@
 			<element name="numeroJoueur" type="int"></element>
 			<element name="pseudo" type="string"></element>
 			<element name="couleur" type="string"></element>
-			<element name="score" type="tns:Score"></element>
+			<element name="score" type="tns:Score" minOccurs="1" maxOccurs="1"></element>
 		</sequence>
 	</complexType>
 
